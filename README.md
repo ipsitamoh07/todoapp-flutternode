@@ -1,4 +1,4 @@
-<h1>To-Do App with Node.js, MongoDB, and Flutter</h1>
+<h1>TODIRE : To-Do App with Node.js, MongoDB, and Flutter</h1>
         <p>This project is a To-Do application built using Node.js for the backend, MongoDB for the database, and Flutter for the frontend. The backend provides APIs to create, read, update, and delete to-do items, and the Flutter app interacts with these APIs.</p>
         
 <h2>Features</h2>
@@ -11,10 +11,11 @@
 <h2>Project Structure</h2>
         <pre>
         ├── backend
+        │   ├── config
         │   ├── controllers
         │   ├── models
         │   ├── routes
-        │   ├── server.js
+        │   ├── services
         ├── frontend
         │   ├── lib
         │   ├── pubspec.yaml
@@ -55,7 +56,7 @@
             <pre><code class="command">flutter pub get</code></pre>
             <li>Update the `config.dart` file with the backend API URL</li>
             <pre><code>
-            const String baseUrl = 'http://localhost:5000';
+            const String baseUrl = 'http://localhost:3000';
             const String login = '$baseUrl/api/auth/login';
             const String register = '$baseUrl/api/auth/register';
             const String addtodo = '$baseUrl/api/todo/create';
